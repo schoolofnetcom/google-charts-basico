@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google Charts</title>
+</head>
+<body>
+<div id="my-chart"></div>
+<div>
+    <button type="button" onclick="editDataTableAndDrawChart()">Editar</button>
+    <button type="button" onclick="removeRowAndDrawChart()">Remover linha 2</button>
+
+    <table id="my-table" border="1">
+        <thead>
+        <tr>
+            <th></th>
+            <th>Preferências</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">Machado de Assis</th>
+            <td>10</td>
+        </tr>
+        <tr>
+            <th scope="row">Manoel de Barros</th>
+            <td>15</td>
+        </tr>
+        <tr>
+            <th scope="row">Guimaraes Rosa</th>
+            <td>20</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<script type="text/javascript" src="http://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

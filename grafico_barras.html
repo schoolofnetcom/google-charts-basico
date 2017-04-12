@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google Charts</title>
+</head>
+<body>
+<div id="my-chart"></div>
+<div>
+    <label>Autor:</label>
+    <input type="text" name="author" id="author">
+
+    <label>Valor 2016:</label>
+    <input type="text" name="value" id="value-2016">
+
+    <label>Valor 2017:</label>
+    <input type="text" name="value" id="value-2017">
+
+    <button type="button" id="btn-insert-table" disabled onclick="insertTable()">Inserir</button>
+    <button type="button" id="btn-draw-chart" disabled onclick="drawChart()">Gerar gráfico</button>
+
+    <table id="my-table" border="1">
+        <thead>
+        <tr>
+            <th></th>
+            <th>Prefer. 2016</th>
+            <th>Prefer. 2017</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">Machado de Assis</th>
+            <td>10</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <th scope="row">Manoel de Barros</th>
+            <td>15</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <th scope="row">Guimaraes Rosa</th>
+            <td>20</td>
+            <td>25</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<script type="text/javascript" src="http://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
